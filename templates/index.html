@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+    <style>
+        .job-listings{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .job-listings li{
+            padding: 20px;
+            padding-right: 0px;
+            font-size: 20px;
+        }
+        #featured-jobs{
+            margin: 10px;
+            margin-top: 20px;
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Class</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{url_for('browse')}}">Browse</a></li>
+                    <li><a href="/post">Post</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Welcome to Class</h2>
+            <p>Find your topic for study!</p>
+            <form action="/joblist" method="GET" id="search-form">
+                <input type="text" name="keywords" placeholder="Keywords" required>
+             <!--  <input type="text" name="location" placeholder="Location" required>  -->
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </section>
+
+
+        <!--id=featured-jobs-->
+
+        <section id="featured-jobs">
+            <h2>Featured</h2>
+            <ul class="job-listings">
+                <li>
+                    <h3>Chapter 1</h3>
+                    <p> Cloud computing.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+                <li>
+                    <h3>Chapter 2</h3>
+                    <p> Flask and python.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+                <li>
+                    <h3>Chapter 3</h3>
+                    <p>Description: About Vs code.</p>
+                    <a href="/Allview" class="btn">start</a>
+                </li>
+                <li>
+                    <h3>Chapter 4</h3>
+                    <p>Description: Program of Flask.</p>
+                    <a href="/Allview" class="btn">start</a>
+                </li>
+                <li>
+                    <h3>Chapter 5</h3>
+                    <p>Description: Using IBM cloud.</p>
+                    <a href="/Allview" class="btn">start</a>
+                </li>
+                <li>
+                    <h3>Chapter 6</h3>
+                    <p>Description: ReadHat openshift.</p>
+                    <a href="/Allview" class="btn">start</a>
+                </li>
+                <li>
+                    <h3>Chapter 6</h3>
+                    <p>Description: Building Project using IBM cloud.</p>
+                    <a href="/Allview" class="btn">start</a>
+                </li>
+                <li>
+                    <h3>Chapter 7</h3>
+                    <p>Description: Additional.</p>
+                    <a href="/Allview" class="btn">start</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Class. All rights reserved.</p>
+    </footer>
+</body>
+</html>

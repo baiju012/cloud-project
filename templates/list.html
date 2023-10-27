@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board -  Listings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+</head>
+<body>
+    <div class="container">  
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Class</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{url_for('browse')}}">Browse</a></li>
+                    <li><a href="/post">Post</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="job-listings-section">
+            <h2>Browse</h2>
+            <div class="filter-options">
+                <form action="#" method="GET">
+                    <input type="text" name="keywords" placeholder="Keywords">
+                  <!-- <input type="text" name="location" placeholder="Location">--> 
+                    <button type="submit" class="btn">Filter</button>
+                </form>
+            </div>
+            <ul class="job-listings">
+                <li>
+                    <h3>Chapter 1</h3>
+                    <p>Topic: Topic A</p>
+            
+                    <p>Description: We will right very soon.</p>
+                    <a href="/Allview" class="btn">Apply</a>
+                </li>
+                <li>
+                    <h3>Chapter 2</h3>
+                    <p>Topic: Topic B</p>
+                    <p>Description:  We will right very soon.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+                <li>
+                    <h3>chapter 3</h3>
+                    <p>Topic: Topic C</p>
+                    <p>Description:  We will right very soon.</p>
+                    <a href="/Allview" class="btn">Apply</a>
+                </li>
+                <li>
+                    <h3>Chapter 4</h3>
+                    <p>Topic: Topic D</p>
+                    <p>Location: City D</p>
+                    <p>Description:  We will right very soon.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+                <li>
+                    <h3>Chapter 5</h3>
+                    <p>Topic: Topic E</p>
+                    
+                    <p>Description:  We will right very soon.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+                <li>
+                    <h3>Chapter 6</h3>
+                    <p>Topic: Topic F</p>
+                    <p>Location: City F</p>
+                    <p>Description:  We will right very soon.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+                <li>
+                    <h3>Chapter 7</h3>
+                    <p>Topic: Topic G</p>
+                    <p>Description:  We will right very soon.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+                <li>
+                    <h3>Chapter 8</h3>
+                    <p>Topic: Topic H</p>
+
+                    <p>Description:  We will right very soon.</p>
+                    <a href="/Allview" class="btn">Start</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Board. All rights reserved.</p>
+    </footer>
+</body>
+</html>
