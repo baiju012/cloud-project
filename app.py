@@ -48,12 +48,6 @@ def login():
         else:
             msg = "Invalid Credentials"
             return render_template("login.html", message=msg)
-
-
-
-
-
-
     return render_template("login.html")
 
 @app.route("/profile")
